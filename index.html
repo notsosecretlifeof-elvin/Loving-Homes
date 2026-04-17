@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loving Homes — Luxury Dog Hotel & Care</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="brand" onclick="showPage('home')">
+    <div class="brand-icon">🐾</div>
+    <div class="brand-text">
+      <h1>Loving Homes</h1>
+      <p>Luxury Dog Hotel</p>
+    </div>
+  </div>
+  <nav>
+    <button id="nav-home" class="active" onclick="showPage('home')">Home</button>
+    <button id="nav-plans" onclick="showPage('plans')">Stay Plans</button>
+    <button id="nav-facilities" onclick="showPage('facilities')">Facilities</button>
+    <button id="nav-contact" onclick="showPage('contact')">Contact</button>
+  </nav>
+</header>
+
+<!-- ═══════════════ HOME PAGE ═══════════════ -->
+<div id="page-home" class="page active">
+
+  <section class="hero">
+    <div class="hero-orb"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Est. 2018 · Award Winning Care</div>
+      <h2>Your Dog's<br><em>Home Away</em><br>From Home</h2>
+      <p>Luxury boarding, expert care, and premium facilities in a setting your dog will adore.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="showPage('plans')">View Stay Plans</button>
+        <button class="btn-outline" onclick="showPage('facilities')">Our Facilities</button>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-block">
+        <div class="stat-num">500+</div>
+        <div class="stat-label">Happy Guests</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">24/7</div>
+        <div class="stat-label">Vet On-Site</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">4</div>
+        <div class="stat-label">Stay Plans</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">★ 4.9</div>
+        <div class="stat-label">Guest Rating</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-intro">
+    <div>
+      <div class="intro-badge">About Us</div>
+      <h3 class="intro-heading">Where luxury meets<br>genuine animal love</h3>
+      <p class="intro-body">Welcome to Loving Homes, where we redefine the boarding experience with a focus on uncompromised luxury and individualized care. Our boutique dog hotel is designed to be a true "home away from home," featuring climate-controlled suites, expansive play areas, and a dedicated team of caregivers committed to your dog’s comfort and happiness.</p>
+      <button class="intro-cta" onclick="showPage('facilities')">Explore Our Facilities</button>
+    </div>
+    <div class="intro-visual">
+      <div class="visual-tile">
+        <img src="https://images.unsplash.com/photo-1720760585814-5c5280ea72d5?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="300px" width="300px">
+        <div class="tile-label">Woodland Walks</div>
+        <div class="tile-sub">Daily nature trails</div>
+      </div>
+      <div class="visual-tile">
+        <img src="https://plus.unsplash.com/premium_photo-1663012822996-ba7e04f3627a?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="250px" width="250px">
+        <div class="tile-label">Grooming Spa</div>
+        <div class="tile-sub">Full pamper service</div>
+      </div>
+      <div class="visual-tile">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQa3g6zsf7yzsWlBtcMdzddsdalQKR6X4iDg&s" height="300px" width="300px">
+        <div class="tile-label">Cosy Suites</div>
+        <div class="tile-sub">Heated & private</div>
+      </div>
+      <div class="visual-tile">
+        <img src="https://images.unsplash.com/photo-1504595403659-9088ce801e29?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="250px" width="250px">
+        <div class="tile-label">Daily Updates</div>
+        <div class="tile-sub">Photos & reports</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-plans">
+    <div class="section-header">
+      <div class="section-tag">Stay Plans</div>
+      <h2 class="section-title">Tailored to every dog</h2>
+      <p>We believe every guest is unique, which is why we offer a variety of tailored stay packages—ranging from active adventure bundles to serene wellness retreats. Whether your companion prefers woodland explorations or pampering sessions in our grooming parlour, our experts are on hand to advise you on the perfect package to suit their personality and needs.</p>
+    </div>
+    <div class="plans-grid">
+      <div class="plan-card" onclick="showPage('plans')">
+        <div class="plan-name">Day</div>
+        <div class="plan-tagline">Perfect for day trips</div>
+        <ul class="plan-features">
+          <li>Two walks per day</li>
+          <li>External play area</li>
+          <li>Agility track</li>
+          <li>Sand digging pit</li>
+        </ul>
+      </div>
+      <div class="plan-card featured" onclick="showPage('plans')">
+        <div class="plan-badge">Most Popular</div>
+        <div class="plan-name">Classic</div>
+        <div class="plan-tagline">Our signature stay</div>
+        <ul class="plan-features">
+          <li>Three activities per day</li>
+          <li>Indoor play barn</li>
+          <li>Zen zone</li>
+          <li>Grooming session</li>
+        </ul>
+      </div>
+      <div class="plan-card" onclick="showPage('plans')">
+        <div class="plan-name">Premium</div>
+        <div class="plan-tagline">The ultimate experience</div>
+        <ul class="plan-features">
+          <li>Four activities per day</li>
+          <li>Private grass area</li>
+          <li>Daily updates & photos</li>
+          <li>Treats included</li>
+        </ul>
+      </div>
+      <div class="plan-card" onclick="showPage('plans')">
+        <div class="plan-name">Custom</div>
+        <div class="plan-tagline">Tailored to your dog</div>
+        <ul class="plan-features">
+          <li>Bespoke itinerary</li>
+          <li>Special needs care</li>
+          <li>Flexible scheduling</li>
+          <li>Dedicated handler</li>
+        </ul>
+      </div>
+    </div>
+    <button class="view-all-btn" onclick="showPage('plans')">See Full Plan Details →</button>
+  </section>
+
+</div>
+
+<!-- ═══════════════ PLANS PAGE ═══════════════ -->
+<div id="page-plans" class="page">
+
+  <div class="page-hero">
+    <div class="page-hero-tag">Our Packages</div>
+    <h2>Stay Plans</h2>
+    <p>From a single day to an extended luxury retreat — find the perfect plan for your dog.</p>
+  </div>
+
+  <div class="plans-page-content">
+    <div class="full-plans-grid">
+
+      <div class="full-plan-card">
+        <div class="plan-header">
+          <div class="plan-header-top">
+            <h3>Day Stay</h3>
+          </div>
+          <p>Ideal for day trips or work days</p>
+        </div>
+        <div class="plan-body">
+          <ul class="plan-feature-list">
+            <li><span class="feat-dot"></span>Two supervised walks per day</li>
+            <li><span class="feat-dot"></span>Access to external play area</li>
+            <li><span class="feat-dot"></span>Agility track session</li>
+            <li><span class="feat-dot"></span>Sand digging pit</li>
+          </ul>
+          <button class="plan-cta" onclick="showPage('contact')">Book a Day Stay</button>
+        </div>
+      </div>
+
+      <div class="full-plan-card">
+        <div class="plan-header">
+          <div class="plan-header-top">
+            <h3>Classic Stay</h3>
+          </div>
+          <p>Our most popular overnight package</p>
+        </div>
+        <div class="plan-body">
+          <ul class="plan-feature-list">
+            <li><span class="feat-dot"></span>Three tailored activities per day</li>
+            <li><span class="feat-dot"></span>Indoor play barn</li>
+            <li><span class="feat-dot"></span>Access to the Zen relaxation zone</li>
+            <li><span class="feat-dot"></span>Full grooming session included</li>
+          </ul>
+          <button class="plan-cta" onclick="showPage('contact')">Book Classic Stay</button>
+        </div>
+      </div>
+
+      <div class="full-plan-card">
+        <div class="plan-header">
+          <div class="plan-header-top">
+            <h3>Premium Stay</h3>
+          </div>
+          <p>The ultimate luxury boarding experience</p>
+        </div>
+        <div class="plan-body">
+          <ul class="plan-feature-list">
+            <li><span class="feat-dot"></span>Four premium activities per day</li>
+            <li><span class="feat-dot"></span>Exclusive private grass paddock</li>
+            <li><span class="feat-dot"></span>Daily photo updates & reports</li>
+            <li><span class="feat-dot"></span>Premium treats (as agreed with owner)</li>
+          </ul>
+          <button class="plan-cta" onclick="showPage('contact')">Book Premium Stay</button>
+        </div>
+      </div>
+
+      <div class="full-plan-card">
+        <div class="plan-header">
+          <div class="plan-header-top">
+            <h3>Custom Stay</h3>
+          </div>
+          <p>For dogs with additional requirements</p>
+        </div>
+        <div class="plan-body">
+          <ul class="plan-feature-list">
+            <li><span class="feat-dot"></span>Every dog is different. If your dog has special requirements — medical needs, dietary restrictions, or a unique routine — we'll build a custom plan around them. Just get in touch and we'll take care of everything.</li>
+          </ul>
+          <button class="custom-btn" onclick="showPage('contact')">Arrange Custom Plan</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══════════════ FACILITIES PAGE ═══════════════ -->
+<div id="page-facilities" class="page">
+
+  <div class="page-hero">
+    <div class="page-hero-tag">Our Space</div>
+    <h2>World-Class Facilities</h2>
+    <p>Every corner of Loving Homes has been designed with canine comfort and enrichment at its heart.</p>
+  </div>
+
+  <div class="fac-intro">
+    <div>
+      <div class="section-tag">What We Offer</div>
+      <div class="fac-list" id="facList">
+
+        <div class="fac-item open" onclick="toggleFac(this)">
+          <div class="fac-item-top">
+            <div style="display:flex;align-items:center">
+              <span class="fac-item-num">01</span>
+              <span class="fac-item-name">Grooming Parlour & Spa</span>
+            </div>
+            <span class="fac-item-arrow">+</span>
+          </div>
+          <div class="fac-item-desc">Our fully-equipped grooming parlour offers everything from a simple wash & brush to a full spa treatment. Experienced groomers handle all breeds with patience and expertise, leaving your dog looking and feeling their absolute best.</div>
+        </div>
+
+        <div class="fac-item" onclick="toggleFac(this)">
+          <div class="fac-item-top">
+            <div style="display:flex;align-items:center">
+              <span class="fac-item-num">02</span>
+              <span class="fac-item-name">24-Hour Veterinary Services</span>
+            </div>
+            <span class="fac-item-arrow">+</span>
+          </div>
+          <div class="fac-item-desc">A qualified vet is on-site around the clock. Whether it's a routine check or an unexpected health concern, your dog is in safe hands at all times. We'll always keep you informed and seek your consent for any treatment.</div>
+        </div>
+
+        <div class="fac-item" onclick="toggleFac(this)">
+          <div class="fac-item-top">
+            <div style="display:flex;align-items:center">
+              <span class="fac-item-num">03</span>
+              <span class="fac-item-name">Luxury Heated Suites</span>
+            </div>
+            <span class="fac-item-arrow">+</span>
+          </div>
+          <div class="fac-item-desc">Each private suite features underfloor heating or cooling depending on the season, a plush orthopaedic bed, and in-room TV entertainment. Dogs sleep soundly in their own space, free from unnecessary stress.</div>
+        </div>
+
+        <div class="fac-item" onclick="toggleFac(this)">
+          <div class="fac-item-top">
+            <div style="display:flex;align-items:center">
+              <span class="fac-item-num">04</span>
+              <span class="fac-item-name">Woodland Walks & Paddock</span>
+            </div>
+            <span class="fac-item-arrow">+</span>
+          </div>
+          <div class="fac-item-desc">Our property borders a private woodland trail used for scenic, off-lead exploration. We also have a fully secure outdoor paddock for free-roaming play and an indoor activity barn for rainy days.</div>
+        </div>
+
+        <div class="fac-item" onclick="toggleFac(this)">
+          <div class="fac-item-top">
+            <div style="display:flex;align-items:center">
+              <span class="fac-item-num">05</span>
+              <span class="fac-item-name">Chauffeur Collect & Return</span>
+            </div>
+            <span class="fac-item-arrow">+</span>
+          </div>
+          <div class="fac-item-desc">Door-to-door chauffeur service available within a 25-mile radius. Your dog travels in a climate-controlled, luxury vehicle with a familiar handler — making drop-off and pick-up completely stress-free for both of you.</div>
+        </div>
+
+        <div class="fac-item" onclick="toggleFac(this)">
+          <div class="fac-item-top">
+            <div style="display:flex;align-items:center">
+              <span class="fac-item-num">06</span>
+              <span class="fac-item-name">Pet-Watch Monitoring</span>
+            </div>
+            <span class="fac-item-arrow">+</span>
+          </div>
+          <div class="fac-item-desc">Our Pet-Watch system gives you peace of mind with live camera access to your dog's suite and activity areas via our app. Receive real-time notifications, photos, and short video clips throughout their stay.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="fac-highlights">
+      <div class="section-tag" style="margin-bottom:20px">At a Glance</div>
+      <div class="highlight-grid">
+        <div class="highlight-card accent">
+          <div class="hc-icon">🌡️</div>
+          <div class="hc-title">Climate Controlled</div>
+          <div class="hc-desc">Heated & cooled suites year-round</div>
+        </div>
+        <div class="highlight-card">
+          <div class="hc-icon">📹</div>
+          <div class="hc-title">Live Cameras</div>
+          <div class="hc-desc">Watch from your phone anytime</div>
+        </div>
+        <div class="highlight-card gold">
+          <div class="hc-icon">🌳</div>
+          <div class="hc-title">Private Woodland</div>
+          <div class="hc-desc">Off-lead trail walks daily</div>
+        </div>
+        <div class="highlight-card accent">
+          <div class="hc-icon">🩺</div>
+          <div class="hc-title">Vet On-Site</div>
+          <div class="hc-desc">24 hours, 7 days a week</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fac-gallery">
+    <div class="section-tag" style="margin-bottom:20px">Our Spaces</div>
+    <div class="gallery-grid">
+      <div class="gallery-tile">
+        <img src="https://www.midmark.com/images/default-source/webp/animal-health/products/luxury-walk-in-dog-suite-04-product-thumbnail.webp?sfvrsn=7df62d09_1" alt="The Suites" class="gallery-img">
+      </div>
+      <div class="gallery-tile">
+        <img src="https://www.barksandrecstpete.com/wp-content/uploads/2018/02/IMG_0877-1024x683.jpg" alt="Grooming Parlour" class="gallery-img">
+      </div>
+      <div class="gallery-tile"><span class="gallery-label">Play Barn</span></div>
+      <div class="gallery-tile"><span class="gallery-label">Woodland Trail</span></div>
+      <div class="gallery-tile"><span class="gallery-label">The Paddock</span></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══════════════ CONTACT PAGE ═══════════════ -->
+<div id="page-contact" class="page">
+
+  <div class="page-hero">
+    <div class="page-hero-tag">Get In Touch</div>
+    <h2>Book a Stay</h2>
+    <p>Ready to give your dog a remarkable experience? We'd love to hear from you.</p>
+  </div>
+
+  <div class="contact-layout">
+    <div class="contact-info">
+      <h2>Let's talk about your dog</h2>
+      <p>Whether you're ready to book, have questions about a plan, or want to arrange a tour of our facilities — our team is always happy to help.</p>
+
+      <div class="contact-detail">
+        <div class="cd-icon">📍</div>
+        <div>
+          <div class="cd-label">Location</div>
+          <div class="cd-value">Hong Kong</div>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="cd-icon">📞</div>
+        <div>
+          <div class="cd-label">Phone</div>
+          <div class="cd-value">01244 800 100</div>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="cd-icon">✉️</div>
+        <div>
+          <div class="cd-label">Email</div>
+          <div class="cd-value">hello@lovinghomes.co.uk</div>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="cd-icon">🕐</div>
+        <div>
+          <div class="cd-label">Office Hours</div>
+          <div class="cd-value">Mon – Sun, 7am – 8pm</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send us an enquiry</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Jane Smith">
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="jane@example.com">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Dog's Name</label>
+          <input type="text" placeholder="Buddy">
+        </div>
+        <div class="form-group">
+          <label>Breed</label>
+          <input type="text" placeholder="Golden Retriever">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Stay Plan</label>
+        <select>
+          <option>Select a plan...</option>
+          <option>Day Stay</option>
+          <option>Classic Stay</option>
+          <option>Premium Stay</option>
+          <option>Extended Stay</option>
+          <option>Custom — I need something bespoke</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea placeholder="Tell us about your dog and any special requirements..."></textarea>
+      </div>
+      <button class="form-submit">Send Enquiry</button>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-brand">Loving Homes</div>
+  <div class="footer-links">
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('plans')">Stay Plans</button>
+    <button onclick="showPage('facilities')">Facilities</button>
+    <button onclick="showPage('contact')">Contact</button>
+  </div>
+  <div class="footer-copy">© 2026 Loving Homes. All Rights Reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
